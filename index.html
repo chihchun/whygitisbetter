@@ -48,6 +48,7 @@
     .footer-badges { text-align: center; }
     .footer-badges a { color: #777; }
 		.lang a {color: inherit; text-decoration: none;}
+    .note { text-decoration: italic; color: #666; padding: 1em; }
 	</style>
 	
 </head>
@@ -500,7 +501,6 @@
 								<th>Git</th>
 								<th>Hg</th>
 								<th>Bzr</th>
-								<th>Bzr*</th>
 								<th>SVN</th>
 							</tr>
 							<tr>
@@ -508,7 +508,6 @@
 								<td class="sweet">24M</td>
 								<td>34M</td>
 								<td>45M</td>
-								<td>89M</td>
 								<td></td>
 							</tr>
 							<tr>
@@ -516,19 +515,9 @@
 								<td class="compare">43M</td>
 								<td>53M</td>
 								<td>64M</td>
-								<td>108M</td>
 								<td class="compare">61M</td>
 							</tr>
 						</table>
-						
-						<div class="text"><small>
-                            <!--
-							* the second Bzr number is after I ran 'bzr pack', which I thought
-							would make it smaller, but ended up making it much, much larger for
-							some reason. 
-                            -->
-                            * 第二個 Bzr 數字是我執行 'bzr pack' 後得到，我原本以為會讓它更小，結果反而讓它變大許多...。
-						</small></div>
 						
 					</div>
 	    </div>
@@ -759,7 +748,6 @@
 	    <div class="span-24 section">
 				<div class="args">
 					<span class="lang hg">hg</span>
-					<span class="lang bzr">bzr</span>
 					<span class="lang svn">svn</span>
 					<span class="lang perforce">perforce</span>
 				</div>
@@ -777,7 +765,7 @@
 						I <em>may</em> be biased here, given that I work for 
 						<a href="http://github.com">GitHub</a>, 
 						but I add this section anyway because so many people say that
-						GitHub itself was specifically why they choose Git.
+						GitHub itself was specifically why they chose Git.
                         -->
                         這由我來說<strong>可能</strong>有點偏頗，因為我替
                         <a href="http://github.com">GitHub</a> 工作，但是我還是決定要寫這一部份，因為很多人說他們是因為
@@ -818,6 +806,18 @@
             This type of community is simply not available with any of the other SCMs.
             -->
             這樣的社群不是其他 SCM 所擁有的。
+          </div>
+
+					<div class="note">					
+            And no, BitBucket doesn't count just because they ripped off GitHub screen for screen.
+            When they are 30 times bigger and I hear that anyone choose Mercurial over something 
+            else because of the community on BitBucket, then I'll reconsider.
+            <br/>
+            <br/>
+            Launchpad for Bazaar is closer, but they're still a fraction of the size, nor have I
+            heard of anyone leaning towards Bzr because of the incredible Launchpad community
+            they want to take part in.  However, as they are more legitimate, I've removed the
+            'bzr' flag from this argument.
           </div>
 					
 					<div class="tweets">
@@ -983,6 +983,7 @@ show       Show various types of objects
       <a href="http://es.whygitisbetterthanx.com">Spanish</a>, 
       <a href="http://fr.whygitisbetterthanx.com">French</a>, 
       <a href="http://it.whygitisbetterthanx.com">Italian</a>, 
+      <a href="http://lol.whygitisbetterthanx.com">Lolcat</a>, 
       <a href="http://nl.whygitisbetterthanx.com">Dutch</a>, 
       <a href="http://no.whygitisbetterthanx.com">Norwegian</a>, 
       <a href="http://pt.whygitisbetterthanx.com">Portuguese</a>, 
