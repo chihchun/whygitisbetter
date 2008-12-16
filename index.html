@@ -74,15 +74,15 @@
 
 	    <div class="span-24">
 					<div class="text intro">
-                <!--
+						<!--
 		        This site is here because I seem to
 						be spending a lot of time lately defending Gitsters against 
 						charges of fanboyism, bandwagonism
 						and koolaid-thirst.  So, here is why people are switching to Git from
 						X, and why you should too.  Just click on a reason to view it.
-                -->
-                這個網站的存在是因為我花了很多時間在替 Git 幫 (Gitsters) 辯護，為了對抗那些信眾主義 (fanboyism)、羊群主義 (bandwagonism) 還有人工色素貪食者 (koolaid-thirst) 的指控。
-                因此，這裡說明為什麼大家都要從 X 換成 Git，而且為什麼你也應該這樣做。可點開以下任一個原因進行了解。
+						-->
+						這個網站的存在是因為我花了很多時間在替 Git 幫 (Gitsters) 辯護，為了對抗那些信眾主義 (fanboyism)、羊群主義 (bandwagonism) 還有人工色素貪食者 (koolaid-thirst) 的指控。
+						因此，這裡說明為什麼大家都要從 X 換成 Git，而且為什麼你也應該這樣做。可點開以下任一個原因進行了解。
 					</div>
 					
 					<div class="expand_collapse_links">
@@ -100,35 +100,35 @@
 					</div>
 
 	        <h2>
-          <a name="cheap-local-branching" href="#cheap-local-branching">低廉的本地分支</a>
+				<a name="cheap-local-branching" href="#cheap-local-branching">低廉的本地分支</a>
 	        </h2>
 					<div class="contents">
 						
 						<div class="text">
-                            <!--
+							<!--
 							Probably Git's most compelling feature that really makes it stand
 							apart from nearly every other SCM out there is its branching
 							model.  It is completely different from all of the models I'm 
 							comparing it to here, most of which recommend that the best branch
 							is basically a clone of the repository in a new directory.
-                            -->
-                            Git 的分支模型 (branching model) 大概是 Git 最受矚目的特色，而且讓它從所有其他 SCM 中脫穎而出。
-                            它與其他我在此所比較模型完全不同，大部分所被推薦的最佳分支方法僅僅只是複製倉儲 (repository) 到新的目錄而已。
+							-->
+							Git 的分支模型 (branching model) 大概是 Git 最受矚目的特色，而且讓它從所有其他 SCM 中脫穎而出。
+							它與其他我在此所比較模型完全不同，大部分所被推薦的最佳分支方法僅僅只是複製倉儲 (repository) 到新的目錄而已。
 						</div>
 						
 						<div class="text">
-                            <!--
+							<!--
 							Git does not work like that.  Git will allow you to have multiple
 							local branches that can be entirely independent of each other and
 							the creation, merging and deletion of those lines of development
 							take seconds.
-                            -->
-                            Git 不是那樣運作的。 Git 讓你可以擁有多個本地的分支，它們可以是完全獨立的，而且建立、合併和刪除這些開發的支線只需要幾秒鐘的時間。
+							-->
+							Git 不是那樣運作的。 Git 讓你可以擁有多個本地的分支，它們可以是完全獨立的，而且建立、合併和刪除這些開發的支線只需要幾秒鐘的時間。
 						</div>
 						
 						
 						<div class="text">
-                            <!--
+							<!--
 							This means that you can do things like:
 							<ul>
 								<li>Create a branch to try out an idea, commit
@@ -148,39 +148,39 @@
 									ever seeing it (even if you've pushed other branches in the meantime)
 								</li>
 							</ul>
-                            -->
-                            這表示你可以這樣做：
-                            <ul>
-                                <li>建立一個分支來試試新點子，提交 (commit) 個幾次然後切回你原本的分支，加上一個 patch，然後再切回剛剛實驗用的分支，把它合併進來。</li>
-                                <li>有一個分支只用來放出貨的版本，另一個用來合併開發中的工作成果供測試，其他幾個小分支用來放每天的開發成果。</li>
-                                <li>替每一個你正在實做的新功能建立新的分支，然後你就可以平順的在它們之中切換，最後刪除掉那些已經合併入主版本的分支。</li>
-                                <li>建立一個新的分支做實驗，若發現實驗行不通就直接刪掉這個分支，過程沒有任何人知道它曾經存在 (甚至你還可以同時把其他的分支公佈出去)</li>
-                            </ul>
+							-->
+							這表示你可以這樣做：
+							<ul>
+								<li>建立一個分支來試試新點子，提交 (commit) 個幾次然後切回你原本的分支，加上一個 patch，然後再切回剛剛實驗用的分支，把它合併進來。</li>
+								<li>有一個分支只用來放出貨的版本，另一個用來合併開發中的工作成果供測試，其他幾個小分支用來放每天的開發成果。</li>
+								<li>替每一個你正在實做的新功能建立新的分支，然後你就可以平順的在它們之中切換，最後刪除掉那些已經合併入主版本的分支。</li>
+								<li>建立一個新的分支做實驗，若發現實驗行不通就直接刪掉這個分支，過程沒有任何人知道它曾經存在 (甚至你還可以同時把其他的分支公佈出去)</li>
+							</ul>
 						</div>
 						
 						<img src="images/branches.png" alt="branches flowchart"/>
 						
 						<div class="text">
-                            <!--
+							<!--
 							Importantly, when you push to a remote repository, you do <em>not</em>
 							have to push all of your branches.  You can only share one of your
 							branches and not all of them.  This tends to free people to try
 							new ideas without worrying about having to plan how and when they
 							are going to merge it in or share it with others.
-                            -->
-                            最重要的是，當你要發佈到一個遠端的倉儲，你<strong>不需要</strong>把你所有的分支都推出去。
-                            你可以只分享你的分支的其中一個而不是全部。這讓大家可以嘗試新的點子而不需要擔心要計劃要如何、何時合併或與其他人分享。
+							-->
+							最重要的是，當你要發佈到一個遠端的倉儲，你<strong>不需要</strong>把你所有的分支都推出去。
+							你可以只分享你的分支的其中一個而不是全部。這讓大家可以嘗試新的點子而不需要擔心要計劃要如何、何時合併或與其他人分享。
 						</div>
 						
 						<div class="text">
-                            <!--
+							<!--
 							You <em>can</em> find ways to do some of this with other systems, but the work
 							involved is much more difficult and error-prone.  Git makes this
 							process incredibly easy and it changes the way most developers
 							work when they learn it.
-                            -->
-                            你在其他系統上<strong>可以</strong>找到方法做同樣的事，但是會比較困難且容易出錯。
-                            Git 讓這個過程變得非常簡單，而且大部份的開發人員都能學會改進工作的方法。
+							-->
+							你在其他系統上<strong>可以</strong>找到方法做同樣的事，但是會比較困難且容易出錯。
+							Git 讓這個過程變得非常簡單，而且大部份的開發人員都能學會改進工作的方法。
 						</div>
 						
 						<!-- TODO : (short screencast showing the awesomeness of git branches) -->
@@ -207,51 +207,51 @@
 					<div class="contents">	
 
 						<div class="text">
-                            <!--
+							<!--
 							This is basically true of all the distributed SCMs, but in my
 							experience even more so with Git.  There is very little outside
 							of 'fetch', 'pull' and 'push' that communicates in any way with 
 							anything other than your hard disk.
-                            -->
-                            這基本上對所有分散式 SCM 來說都是一樣的，但是在我的經驗中 Git 把這個特色發揮的更好。
-                            除了 'fetch', 'pull' 和 'push' 這些命令外，幾乎沒有其他命令會需要硬碟之外的東西。
+							-->
+							這基本上對所有分散式 SCM 來說都是一樣的，但是在我的經驗中 Git 把這個特色發揮的更好。
+							除了 'fetch', 'pull' 和 'push' 這些命令外，幾乎沒有其他命令會需要硬碟之外的東西。
 						</div>
 
 						<div class="text">
-                            <!--
+							<!--
 							This not only makes most operations much faster than you may
               be used to, but it also allows you to work on stuff offline.
               That may not sound like a big deal, but I'm always amazed at
               how often I actually do work offline.  Being able to branch,
               merge, commit and browse history of your project while on 
               the plane or train is very productive.
-              -->
-                            這不只讓大部分操作變得比你可能習慣的還要快得多，它還讓你可以離線工作。
-                            這聽起來也許沒有什麼，但是我總是驚訝於我有多麼常離線工作。
-                            當你在飛機上或火車上，你還可以建立分支、合併和提交工作、瀏覽專案的歷史，是多麼的有生產力阿。
+			  -->
+							這不只讓大部分操作變得比你可能習慣的還要快得多，它還讓你可以離線工作。
+							這聽起來也許沒有什麼，但是我總是驚訝於我有多麼常離線工作。
+							當你在飛機上或火車上，你還可以建立分支、合併和提交工作、瀏覽專案的歷史，是多麼的有生產力阿。
 						</div>
 						
 						<div class="center"><img style="width: 500px" src="images/local-remote.png" alt="local repo to remote repo flowchart" /></div>
 
 						<div class="text">
-                            <!--
+							<!--
 							Even in Mercurial, common commands like 'incoming' and 'outgoing' hit 
 							the server, whereas with Git you can 'fetch' all the servers data
 							before going offline and do comparisons, merges and logs of data
 							that is on the server but not in your local branches yet.
-                            -->
-                            就算是用 Mercurial，一些常用的指令如 'incoming' 和 'outgoing' 也需要連線伺服器，而用
-                            Git 你可以在離線前 'fetch' 伺服器上所有的資料，然後離線來比較、合併和查看本來存在伺服器上的紀錄。
+							-->
+							就算是用 Mercurial，一些常用的指令如 'incoming' 和 'outgoing' 也需要連線伺服器，而用
+							Git 你可以在離線前 'fetch' 伺服器上所有的資料，然後離線來比較、合併和查看本來存在伺服器上的紀錄。
 						</div>
 												
 						<div class="text">
-                            <!--
+							<!--
 							This means that it's very easy to have copies of not only your
 							branches, but also of everyone's branches that are working with
 							you in your Git repository without having to mess your own stuff
 							up.
-                            -->
-                            這表示你可以很容易擁有副本，不只你自己的分支的、還有其他任何和你一起工作的人的分支都可以存在你的 Git 資料中，而且還不打亂你自己的東西。
+							-->
+							這表示你可以很容易擁有副本，不只你自己的分支的、還有其他任何和你一起工作的人的分支都可以存在你的 Git 資料中，而且還不打亂你自己的東西。
 						</div>
 						
 					</div>
@@ -270,45 +270,45 @@
 	
 					<div class="contents">
 						<div class="text">
-                            <!--
+							<!--
 							Git is fast.  Everyone&mdash;even most of the hard core users of these
 							other systems&mdash;generally give Git this title.  With Git, all
 							operations are performed locally giving it a bit of a leg up on
 							SVN and Perforce, both of which require network access for certain operations.
 							However, even compared to the other DSCMs that also perform operations
 							locally, Git is pretty fast. 
-                            -->
-                            Git 很快。大家都這麼說，甚至那些其他系統的死忠支持者也都會給予 Git 這個評價。
-                            使用 Git，所有的操作都是在本地端的特性讓它比 SVN 與 Perforce 跑得快許多，它們兩個都需要網路連線才能完成大部分操作。
-                            然而，就算是與其他也是在本地端操作的 DSCMs 比較，Git 還是快。
+							-->
+							Git 很快。大家都這麼說，甚至那些其他系統的死忠支持者也都會給予 Git 這個評價。
+							使用 Git，所有的操作都是在本地端的特性讓它比 SVN 與 Perforce 跑得快許多，它們兩個都需要網路連線才能完成大部分操作。
+							然而，就算是與其他也是在本地端操作的 DSCMs 比較，Git 還是快。
 						</div>
 					
 						<div class="text">
-                            <!--
+							<!--
 							Part of this is likely because it was built to work on the Linux 
 							kernel, which means that it has had to deal effectively with large
 							repositories from day one.  Additionally, Git is written in C, reducing the
 							overhead of runtimes associated with higher-level languages.
 							Another reason that Git is so fast is that the primary developers
 							have made this a design goal of the application.
-                            -->
-                            一部分的原因可能是因為它是建立來用在 Linux 核心上的，這表示它從一開始就必須有效率的處理非常大的資料。
-                            此外，因為 Git 是用 C 寫的，減少了使用其他高階語言在執行期的開銷。
-                            另外一個 Git 這麼快地原因是因為它的主要開發者們將這個列為設計的目標。
+							-->
+							一部分的原因可能是因為它是建立來用在 Linux 核心上的，這表示它從一開始就必須有效率的處理非常大的資料。
+							此外，因為 Git 是用 C 寫的，減少了使用其他高階語言在執行期的開銷。
+							另外一個 Git 這麼快地原因是因為它的主要開發者們將這個列為設計的目標。
 						</div>
 
 						<div class="text">
-                            <!--
+							<!--
 							The following are a number of benchmarks that I performed on three
 							copies of the Django source code repository in 3 different SCMs:
 							Git, Mercurial and Bazaar.  I also tested some of this stuff in SVN,
 							but trust me, it's slower&mdash;basically take the Bazaar numbers and
 							then add network latency...
-                            -->
-                            底下是一些我測試的數據，使用 Django 的原始碼倉儲與三種不同的 SCM：
-                            Git, Mercurial 和 Bazaar。
-                            我也用 SVN 測試了一些同樣的項目，不過相信我，它慢更多 &mdash; 基本上是
-                            Bazaar 的數字再加上網路的延遲...
+							-->
+							底下是一些我測試的數據，使用 Django 的原始碼倉儲與三種不同的 SCM：
+							Git, Mercurial 和 Bazaar。
+							我也用 SVN 測試了一些同樣的項目，不過相信我，它慢更多 &mdash; 基本上是
+							Bazaar 的數字再加上網路的延遲...
 						</div>
 
             <table>  
@@ -335,15 +335,15 @@
 						</table>
 						
 						<div class="text">
-                            <!--
+							<!--
 							The end result was that for everything but adding new files, Git
 							was fastest. (Also really large commits, which Hg was basically the
 							same at, but the commit I tested was so large that you're unlikely
 							to ever do anything like it&mdash;normal commits are much faster in Git.)
-                            -->
-                            測試的結果是所有操作，除了加新檔案之外都是 Git 最快。
-                            (還有大量的提交操作，Hg 基本上一樣快，可是我測試的提交量是如此之大，你平常不太可能有同樣的的量
-                            &mdash; 正常的提交操作在 Git 快多了。)
+							-->
+							測試的結果是所有操作，除了加新檔案之外都是 Git 最快。
+							(還有大量的提交操作，Hg 基本上一樣快，可是我測試的提交量是如此之大，你平常不太可能有同樣的的量
+							&mdash; 正常的提交操作在 Git 快多了。)
 						</div>
 						
 						<table>
@@ -416,31 +416,31 @@
 						</table>
 					
 						<div class="text">
-                            <!--
+							<!--
 							The cold and hot branching numbers are the numbers for the first
 							and second times that I branched a repo&mdash;the second number being
 							a branch with a hot disk cache.
-                            -->
-                            Cold 和 Hot 分支數字是我第一次和第二次分支一個倉儲 &mdash; 第二次分支的數據有使用磁碟快取。
+							-->
+							Cold 和 Hot 分支數字是我第一次和第二次分支一個倉儲 &mdash; 第二次分支的數據有使用磁碟快取。
 						</div>
 
 						<div class="text">
-                            <!--
+							<!--
 							It should be noted that although the 'add' numbers are much slower,
               this was for a massive add operation&mdash;over 2000 files.  For the
               majority of what most people do on a daily basis, add ops in any
               of these systems will only take a fraction of a second. All of the
               other ops tested here (except for the large commit, possibly) are
               more indicative of things you might actually do day to day.
-              -->
-                            要特別注意的是雖然 'add' 操作的速度慢很多，但這是在大量的檔案 &mdash; 超過 2000 個 &mdash; 上進行新增操作 。
-                            對於大部分人日常使用來說，在任何系統上新增操作都只會用到幾分之一秒而已。
-                            其他測試到的操作 (除了大量提交...大概) 應該與你日常用到的差不多。
+							-->
+							要特別注意的是雖然 'add' 操作的速度慢很多，但這是在大量的檔案 &mdash; 超過 2000 個 &mdash; 上進行新增操作 。
+							對於大部分人日常使用來說，在任何系統上新增操作都只會用到幾分之一秒而已。
+							其他測試到的操作 (除了大量提交...大概) 應該與你日常用到的差不多。
 						</div>
 					
 					
 					<div class="text">
-                        <!--
+						<!--
 						These numbers are really not difficult to recreate, simply clone the Django
 						project in each of the systems and try out the same commands in each.
 						<ul>
@@ -449,8 +449,8 @@
 							<li><code>bzr branch lp:django dj-bzr</code></li>
 							<li><code>svn checkout http://code.djangoproject.com/svn/django/trunk dj-svn</code></li>
 						</ul>
-                        -->
-                        這些數字不會很難重現，只要用不同的系統 clone 一份 Django 計劃然後試試這些相同的指令。
+						-->
+						這些數字不會很難重現，只要用不同的系統 clone 一份 Django 計劃然後試試這些相同的指令。
 						<ul>
 							<li><code>git clone git://github.com/brosner/django.git dj-git</code></li>
 							<li><code>hg clone http://hg.dpaste.com/django/trunk dj-hg</code></li>
@@ -475,23 +475,23 @@
 	
 					<div class="contents">
 						<div class="text">
-                            <!--
+							<!--
 							Git is really good at conserving disk space.  Your Git directory will 
 							(in general) barely be larger than an SVN checkout&mdash;in some cases
 							actually smaller (apparently a lot can go in those .svn dirs).
-                            -->
-                            Git 真的很懂得怎麼節省磁碟空間。
-                            你的 Git 目錄只會 (一般來說) 比一個 SVN checkout 大一點點 &mdash;
-                            某些情況下甚至更小 (顯然 .svn 目錄裡面有很多東西可以丟掉)。
+							-->
+							Git 真的很懂得怎麼節省磁碟空間。
+							你的 Git 目錄只會 (一般來說) 比一個 SVN checkout 大一點點 &mdash;
+							某些情況下甚至更小 (顯然 .svn 目錄裡面有很多東西可以丟掉)。
 						</div>
 					
 						<div class="text">
-                            <!--
+							<!--
 							The following numbers were taken from clones of the Django project
 							in each of its semi-official Git mirrors at the same point in 
 							its history.
-                            -->
-                            以下數據是用不同系統使用同樣的歷史紀錄點取出 Django 之後得到。
+							-->
+							以下數據是用不同系統使用同樣的歷史紀錄點取出 Django 之後得到。
 						</div>
 					
 						<table>
@@ -534,51 +534,51 @@
 	        </h2>
 					<div class="contents">
 						<div class="text">
-                            <!--
+							<!--
 							Unlike the other systems, Git has what it calls the "staging area"
 							or "index".  This is an intermediate area that you can setup what
 							you want your commit to look like before you commit it.
-                            -->
-                            和其他系統不一樣，Git 有它稱為 "staging area" 或 "index" 的東西。
-                            這是一個中間地帶讓你可以在提交前設定你想要提交什麼。
+							-->
+							和其他系統不一樣，Git 有它稱為 "staging area" 或 "index" 的東西。
+							這是一個中間地帶讓你可以在提交前設定你想要提交什麼。
 						</div>
 						<div class="text">
-                            <!--
+							<!--
 							The cool thing about the staging area, and what sets Git apart 
 							from all these other tools, is that you can easily stage some of
 							your files as you finish them and then commit them without committing
 							all the modified files in your working directory, or having to list
 							them on the command line during the commit
-                            -->
-                            Staging area 最酷的地方，讓 Git 遠遠拋開其他工具的，就是你可以輕易的
-                            在工作告一段落後 stage 一些你的檔案，然後提交上去而不需要提交所有修改過的檔案，或是必須在命令列上列出所有想要提交的檔案。
+							-->
+							Staging area 最酷的地方，讓 Git 遠遠拋開其他工具的，就是你可以輕易的
+							在工作告一段落後 stage 一些你的檔案，然後提交上去而不需要提交所有修改過的檔案，或是必須在命令列上列出所有想要提交的檔案。
 						</div>
 						<div class="center"><img src="images/index1.png" alt="add commit workflow diagram" /></div>
 						
 						<div class="text">
-                          <!--
+							<!--
 						  This also allows you to stage only portions of a modified file.  Gone are
 						  the days of making two logically unrelated modifications to a file before
 						  you realized that you forgot to commit one them.  Now you can just stage
 						  the change you need for the current commit and stage the other change for
 						  the next commit.  This feature scales up to as many different changes to
 						  your file as you need.
-                          -->
-                          這還允許你只 stage 修改過的檔案的一部分。
-                          想像有一天你對一個檔案做了兩項毫不相關的修改，然後你發現忘了先提交其中一個。
-                          現在你可以只 stage 你現在要提交的部份，然後再 stage 剩下的改變給下一次提交。
-                          這個功能可擴大應用到任何你對檔案的改變。
+						  -->
+						  這還允許你只 stage 修改過的檔案的一部分。
+						  想像有一天你對一個檔案做了兩項毫不相關的修改，然後你發現忘了先提交其中一個。
+						  現在你可以只 stage 你現在要提交的部份，然後再 stage 剩下的改變給下一次提交。
+						  這個功能可擴大應用到任何你對檔案的改變。
 						</div>
 
 						<div class="text">
-                            <!--
+							<!--
 							Of course, Git also makes it pretty easy to ignore this feature
 							if you don't want that kind of control&mdash;just slap a '-a' to your
 							commit command in order to add all changes to all files to the staging area.
-                            -->
-                            當然了，Git 也可以很簡單的略過這些特性。
-                            如果你不想要控制這麼多 &mdash; 只要加上 '-a' 到你的 commit 命令就可以一次把所有的修改都丟到
-                            staging area 去。
+							-->
+							當然了，Git 也可以很簡單的略過這些特性。
+							如果你不想要控制這麼多 &mdash; 只要加上 '-a' 到你的 commit 命令就可以一次把所有的修改都丟到
+							staging area 去。
 						</div>
 						
 						<div class="center"><img src="images/index2.png" alt="commit only workflow diagram" /></div>
@@ -669,28 +669,28 @@
 				<div class="contents">
 					
 					<div class="text">
-                        <!--
+						<!--
 						One of the amazing things about Git is that because of its distributed
 						nature and super branching system, you can easily implement pretty
 						much any workflow you can think of relatively easily.
-                        -->
-                        其中一個 Git 令人驚訝的事情就是因為它的分散式設計以及超級分支系統，你可以輕易的實做出幾乎任何你想得到的工作流程。
+						-->
+						其中一個 Git 令人驚訝的事情就是因為它的分散式設計以及超級分支系統，你可以輕易的實做出幾乎任何你想得到的工作流程。
 					</div>
 					
 					<h3>Subversion 式的工作流程</h3>
 					
 
 					<div class="text">
-                        <!--
+						<!--
 						A very common Git workflow, especially from people transitioning
 						from a centralized system, is a centralized workflow.  Git will 
 						not allow you to push if someone has pushed since the last time
 						you fetched, so a centralized model where all developers push to
 						the same server works just fine.
-                        -->
-                        中央集權管理式的工作流程是一種很常見的 Git 工作流程，特別是那些從中央控管式系統轉換過來的人。
-                        如果在你最後一次 fetch 後有人發佈過改變，Git 不會允許你跟著發佈。
-                        所以那種所有的開發人員都提交到同一個伺服器的集權式流程可以運作的很好。
+						-->
+						中央集權管理式的工作流程是一種很常見的 Git 工作流程，特別是那些從中央控管式系統轉換過來的人。
+						如果在你最後一次 fetch 後有人發佈過改變，Git 不會允許你跟著發佈。
+						所以那種所有的開發人員都提交到同一個伺服器的集權式流程可以運作的很好。
 					</div>
 					
 					<div class="center"><img src="images/workflow-a.png" alt="subversion-style workflow" /></div><br/>
@@ -698,17 +698,17 @@
 					<h3>整合管理員工作流程</h3>
 
 					<div class="text">
-                        <!--
+						<!--
 						Another common Git workflow is where there is an integration 
 						manager&mdash;a single person who commits to the 'blessed' repository,
 						and then a number of developers who clone from that repository, 
 						push to their own independent repositories and ask the integrator
 						to pull in their changes.  This is the type of development model 
 						you often see with open source or GitHub repositories.
-                        -->
-                        另外一種常見的 Git 工作流程就是有一個整合經理 &mdash;
-                        單一負責提交到 'blessed' 倉儲的人，然後其他數位開發者從這個倉儲複製，發佈到他們自己的獨立倉儲去，然後要求整合者 pull 他們的修改。
-                        這是在開放原始碼界或是 GitHub 倉儲上常見的開發模型。
+						-->
+						另外一種常見的 Git 工作流程就是有一個整合經理 &mdash;
+						單一負責提交到 'blessed' 倉儲的人，然後其他數位開發者從這個倉儲複製，發佈到他們自己的獨立倉儲去，然後要求整合者 pull 他們的修改。
+						這是在開放原始碼界或是 GitHub 倉儲上常見的開發模型。
 					</div>
 
 					<div class="center"><img src="images/workflow-b.png" alt="integration manager workflow" /></div><br/>
@@ -716,7 +716,7 @@
 					<h3>司令官與副手的工作流程</h3>
 
 					<div class="text">
-                        <!--
+						<!--
 						For more massive projects, you can setup your developers similar to
 						the way the Linux kernel is run, where people are in charge of a
 						specific subsystem of the project ('lieutenants') and merge in all
@@ -724,21 +724,21 @@
 						(the 'dictator') can pull changes from only his/her lieutenants and
 						the push to the 'blessed' repository that everyone then clones from
 						again.
-                        -->
-                        對於一些更複雜的專案，你可以讓你的開發人員們使用類似於 Linux 核心的開發流程，開發人員們各自負責專案中不同的子系統
-                        (副手) 然後合併所有關於此子系統的改變。
-                        另外一位整合者 (司令官) 只可以從他的副手手上 pull 改變，然後發佈到 'blessed' 倉儲讓所有人都可以複製回去。
+						-->
+						對於一些更複雜的專案，你可以讓你的開發人員們使用類似於 Linux 核心的開發流程，開發人員們各自負責專案中不同的子系統
+						(副手) 然後合併所有關於此子系統的改變。
+						另外一位整合者 (司令官) 只可以從他的副手手上 pull 改變，然後發佈到 'blessed' 倉儲讓所有人都可以複製回去。
 					</div>
 
 					<div class="center"><img src="images/workflow-c.png" alt="dictator and lieutenants workflow" /></div><br/>
 					
 					<div class="text">
-                        <!--
+						<!--
 						Again, Git is entirely flexible about this, so you can mix and 
 						match and choose the workflow that is right for you. 
-                        -->
-                        再說一次，Git 是完全有彈性的，所以你可以混合和取用適合你的工作流程。
-          </div>
+						-->
+						再說一次，Git 是完全有彈性的，所以你可以混合和取用適合你的工作流程。
+					</div>
 					
 				</div>
 	    </div>
@@ -760,44 +760,44 @@
           <img style="float:right; padding:10px" src="images/octocat.png" alt="octocat" />
 
 					<div class="text">
-                        <!--
+						<!--
 						I <em>may</em> be biased here, given that I work for 
 						<a href="http://github.com">GitHub</a>, 
 						but I add this section anyway because so many people say that
 						GitHub itself was specifically why they chose Git.
-                        -->
-                        這由我來說<strong>可能</strong>有點偏頗，因為我替
-                        <a href="http://github.com">GitHub</a> 工作，但是我還是決定要寫這一節，因為很多人說他們是因為
-                        GitHub 而選擇 Git。
+						-->
+						這由我來說<strong>可能</strong>有點偏頗，因為我替
+						<a href="http://github.com">GitHub</a> 工作，但是我還是決定要寫這一節，因為很多人說他們是因為
+						GitHub 而選擇 Git。
 					</div>
 
 					<div class="text">					
-                        <!--
+						<!--
 						GitHub is a reason to use Git for many people because it is more 
 						like a social network for code than a simple hosting site.  People
 						find other developers or projects that are similar to the things
 						they are doing, and can easily fork and contribute, creating a very
 						vibrant community around Git and the projects that people use it
 						for.
-                        -->
-                        GitHub 是很多人使用 Git 的原因之一，因為它更像是一個社交網路而不僅僅是簡單的 hosting 服務。
-                        人們找到其他開發人員或是專案，和他們想要做的事類似，因此可以輕易的分支然後貢獻，以
-                        Git 和各種專案為中心創造出一個非常活躍的社群。
+						-->
+						GitHub 是很多人使用 Git 的原因之一，因為它更像是一個社交網路而不僅僅是簡單的 hosting 服務。
+						人們找到其他開發人員或是專案，和他們想要做的事類似，因此可以輕易的分支然後貢獻，以
+						Git 和各種專案為中心創造出一個非常活躍的社群。
 					</div>
 					
 					<div class="text">					
-                        <!--
+						<!--
 						There exist other services, both for Git and for the other SCMs,
 						but few are user-oriented or socially
 						targeted, and none have anywhere near the user-base.  
 						This social aspect of GitHub is killer, and this in combination of the above features
 						make working with Git and GitHub a great combination for rapidly 
 						developing open source projects.
-                        -->
-                        網路上還有其他類似的服務，有 Git 的也有其他 SCM
-                        的，但是很少是使用者導向或社交導向的，沒有一個其他服務有類似的用戶群。
-                        這個 GitHub 的社交觀點是它的殺手級應用，合併以上的特色使得使用 Git 與
-                        GitHub 工作變成快速開發開放原始碼專案的極佳組合。
+						-->
+						網路上還有其他類似的服務，有 Git 的也有其他 SCM
+						的，但是很少是使用者導向或社交導向的，沒有一個其他服務有類似的用戶群。
+						這個 GitHub 的社交觀點是它的殺手級應用，合併以上的特色使得使用 Git 與
+						GitHub 工作變成快速開發開放原始碼專案的極佳組合。
 					</div>
 
 					<div class="text">					
@@ -856,28 +856,28 @@
         
 				<div class="contents">
 					<div class="text">										
-                        <!--
+						<!--
 						This did not used to be true&mdash;early in Git's life, it was not really 
 						an SCM so much as a bunch of tools that let you do versioned filesystem 
 						work in a distributed manner.  However, today, the command set and 
 						learning curve of Git are pretty similar to any other SCM, and even 
 						better than some.
-                        -->
-                        這本來不是真的 &mdash; 早期 Git 不是一個真正的 SCM，比較像是一組工具讓你可以用分散式的觀點做出有版本控制的檔案系統。
-                        但是現在，Git 的命令集以及學習曲線已經變得和其他 SCM 類似，甚至比一些更好。
+						-->
+						這本來不是真的 &mdash; 早期 Git 不是一個真正的 SCM，比較像是一組工具讓你可以用分散式的觀點做出有版本控制的檔案系統。
+						但是現在，Git 的命令集以及學習曲線已經變得和其他 SCM 類似，甚至比一些更好。
 					</div>
 
 					<div class="text">										
-                        <!--
+						<!--
 						Since this is difficult to prove objectively without some sort of 
 						study, I'll just show the difference between the default 'help' menu for the
 						Mercurial and Git commands.  I've highlighted the commands that are
 						identical (or nearly) between the two systems.  (In Hg, if you type 'hg help', you 
 						get a list of 40-some commands.)
-                        -->
-                        不特別去做研究的話很難證明這一點，我在這僅顯示出 Mercurial 與 Git 的預設 'help' 選單之間的差異。
-                        我把兩個系統間相同 (或是近似) 的命令做了高亮顯示。
-                        (在 Hg 中，如果你輸入 'hg help'，你會得到一個 40 多個指令的清單。)
+						-->
+						不特別去做研究的話很難證明這一點，我在這僅顯示出 Mercurial 與 Git 的預設 'help' 選單之間的差異。
+						我把兩個系統間相同 (或是近似) 的命令做了高亮顯示。
+						(在 Hg 中，如果你輸入 'hg help'，你會得到一個 40 多個指令的清單。)
 					</div>
 				
 					<table class="help">
@@ -933,26 +933,26 @@ show       Show various types of objects
 				</table>
 				
 				<div class="text">										
-                    <!--
+					<!--
 					Prior to Git 1.6, all of the Git commands used to be in the executable
 					path, which was very confusing to people.  Although Git still recognizes
 					all of those commands, the only command in the path is now 'git'.
 					So, if you look at Mercurial and Git, Git has a nearly identical 
 					command set and help system&mdash;there is very little difference from 
 					a beginning UI perspective today.
-                    -->
-                    在 Git 1.6 之前，所有的 Git 命令都放在執行檔路徑下，常使人的感到迷惑。
-                    現在雖然 Git 仍然使用這些指令，但在執行檔路徑下的命令只剩下 'git' 一個。
-                    如果你仔細比較 Mercurial 和 Git 會發現，Git 和 Mercurial 有幾乎一樣的指令集和說明系統
-                    &mdash; 以初學者的角度來說，兩者之間的 UI 差異只有一點點差別。
+					-->
+					在 Git 1.6 之前，所有的 Git 命令都放在執行檔路徑下，常使人的感到迷惑。
+					現在雖然 Git 仍然使用這些指令，但在執行檔路徑下的命令只剩下 'git' 一個。
+					如果你仔細比較 Mercurial 和 Git 會發現，Git 和 Mercurial 有幾乎一樣的指令集和說明系統
+					&mdash; 以初學者的角度來說，兩者之間的 UI 差異只有一點點差別。
 				</div>
 				
 				<div class="text">										
-                    <!--
+					<!--
 					These days it's pretty hard to argue that Mercurial or Bazaar is any
 					easier to learn than Git is.
-                    -->
-                    現在已經很難說 Mercurial 或 Bzr 比 Git 容易學習了。
+					-->
+					現在已經很難說 Mercurial 或 Bzr 比 Git 容易學習了。
 				</div>
 				
 				</div>
